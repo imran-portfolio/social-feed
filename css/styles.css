@@ -1,0 +1,604 @@
+/*COlors START
+/////////////////////////////////////////////////////////////////////////*/
+:root {
+  --dark: #2d3339;
+  --grey: #a7aaac;
+  --blue: #0366d6;
+  --light: #f3f3f3;
+  --red: #d73532;
+  --light-grey: #dbdddf;
+  --red: #d40000;
+}
+/*Common Styles START
+/////////////////////////////////////////////////////////////////////////*/
+*{box-sizing:border-box;margin:0;padding:0;transition:ease all .25s;}
+body{font-family: 'Lato', sans-serif;font-size:16px;line-height: 1.4;color:var(--dark);background-color:var(--light);}
+p{margin-bottom:8px;}
+.container{width:100%;max-width:1054px;padding:0 15px;margin:0 auto;}
+.mt-10{margin-top:10px;}
+.mt-15{margin-top:15px;}
+.mt-20{margin-top:20px;}
+.mt-30{margin-top:30px;}
+.mt-40{margin-top:40px;}
+.mb-10{margin-bottom:10px;}
+.mb-15{margin-bottom:15px;}
+.mb-20{margin-bottom:20px;}
+.mb-30{margin-bottom:30px;}
+.mb-40{margin-bottom:40px;}
+.d-flex {display:flex;}
+.justify-content-between{justify-content:space-between;}
+.align-items-center{align-items: center;}
+.for-mobile{display:none;}
+.for-desktop{display:block;}
+.border-radius{border-radius:6px;}
+.card{padding:15px 25px 20px;margin-bottom: 15px;background-color:#fff;border:1px solid var(--light-grey);}
+a{color:var(--dark);}
+ul {list-style: none;}
+.bg-light{background-color:var(--light);}
+.button {
+    background: var(--blue);
+    color: #fff;
+    border: 1px solid var(--blue);
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.button:hover {
+    background: var(--dark); 
+    border-color:  var(--dark); 
+}
+.link {
+    color: var(--blue);
+    font-size: 14px;
+    text-decoration: none;
+}
+.link:hover { 
+    text-decoration: underline;
+}
+@media(max-width:767px) {
+.for-mobile{display:block !important;}
+.for-desktop{display:none !important;}
+.border-radius {
+    border-radius: 0;
+}
+.card { 
+    border-left: 0;
+    border-right: 0;
+}
+.invoice_card .card {
+border:1px solid var(--light-grey);	
+}
+body { 
+    font-size: 15px; 
+} 
+}
+/*HEADER Styles START
+/////////////////////////////////////////////////////////////////////////*/
+header{background:var(--dark);padding:15px 0;}
+header .header_left {
+    column-gap: 24px;
+}
+header .header_left .logo img {max-width: 44px;}
+header .header_left .header_search {position: relative;}
+header .header_left .header_search input {
+    width: 360px;
+    background: transparent;
+    border: 1px solid #575c61;
+    border-radius: 5px;
+    padding: 4px 15px 4px 45px;
+    height: 32px;
+	color:#8d8f92;
+}
+header .header_left .header_search input:focus,
+header .header_left .header_search input:focus-visible { 
+    border-color: #8d8f92; 
+	outline:none;
+}
+header .header_left .header_search i {
+	position:absolute;
+	font-size:20px;
+	color:#575c61;
+	top:calc(50% - 10px);
+	left:12px;
+}
+header .header_inner {
+	
+}
+header .header_right .header_messages .message_Trig {
+	position:relative;
+	cursor:pointer;
+}
+header .header_right .header_messages .message_Trig i {
+    color: #fff;
+    font-size: 24px;
+}
+header .header_right .header_messages .message_Trig .msg_count {
+	width: 18px;
+    height: 18px;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: var(--red);
+    border: 2px solid var(--dark);
+    color: #fff; 
+    font-size: 10px;
+}
+header .header_right {
+    column-gap: 30px;
+}
+header .header_right .user_menu_Trig {
+	cursor:pointer;
+}
+header .header_right .user_menu_Trig img {
+    border-radius: 100px;
+    width: 36px;
+    border: 2px solid #fff;
+}
+@media(max-width:767px) {  
+header .header_left .header_search input { 
+    display: none;
+}
+header .header_left {
+column-gap: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+header .header_left .logo img {
+    max-width: 140px;
+    backface-visibility: hidden;
+}
+header .logo {
+    order: 2;
+}
+.menu_trigger {
+    color: #fff;
+    font-size: 18px;
+	order: 3;
+}
+header .header_left .header_search i { 
+    color: #fff; 
+}
+}
+/* -/ HEADER Styles END
+/////////////////////////////////////////////////////////////////////////*/
+
+
+/* CENTER CONTAINER Styles STARY
+/////////////////////////////////////////////////////////////////////////*/
+.center_container{max-width:722px;margin:0 auto;padding: 40px 0;}
+
+/*TABS Styles START
+/////////////////////////////////////////////////////////////////////////*/
+ul.tabs-nav {
+    border-bottom: 1px solid var(--light-grey); 
+    display: flex;
+	margin-bottom: 20px;
+}
+ul.tabs-nav li a {
+padding: 8px 20px;
+    position: relative;
+    display: block;
+    font-weight: 900;
+	cursor:pointer;
+}
+ul.tabs-nav li.active a {
+    color: var(--blue);
+}
+ul.tabs-nav li a i {
+    margin-right:8px;
+}
+ul.tabs-nav li a:after {
+	position:absolute;
+	content:"";
+	width:0;
+	height:3px;
+	background:var(--blue);
+	left:50%;
+	transform:translate(-50%,0);
+	bottom:0;
+}
+ul.tabs-nav li.active a:after { 
+	width:100%; 
+}
+
+/*Post Filter Card
+/////////////////////////////////////////*/
+.filter_card  { 
+    padding-bottom: 15px;
+}
+.filter_card .posts_sorting .dropdown-button {
+    color: var(--blue);
+}
+.filter_card .posts_sorting .dropdown-button i {
+    font-size:13px;
+}
+.check_list {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.custom-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: -2px;
+}
+.filter_card .more_menu {
+    margin-left: 16px;
+}
+/*POST Styles START
+/////////////////////////////////////////////////////////////////////////*/
+.post_card {
+    column-gap: 10px;
+	padding: 15px 15px 11px;
+}
+.post_card .post_dp img {
+    width: 40px;
+    border-radius: 100px;
+}
+.post_card .post_content {
+    width: 100%;
+}
+.post_card .post_titlebar {
+    margin-bottom: 10px;
+}
+.post_card .post_title {
+	display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.post_card .post_title .post_emoji {
+    margin-left: 4px;
+}
+.post_card .post_title .post_emoji img {
+    width: 18px;
+    vertical-align: middle;
+}
+.post_card .post_title:hover {
+	color:var(--blue);
+}
+.post_card .posted_time {
+    color: var(--grey);
+    font-style: italic;
+    font-size: 13px;
+} 
+.post_card .card { 
+    column-gap: 16px;
+}
+.post_card .card_content .post_heading {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+.post_card .event_time {
+    color: var(--grey);
+    display: block;
+    font-weight: 600;
+}
+.post_card .event_time a {
+	text-decoration:none;
+    color: var(--blue);
+}
+.post_card .card_image {
+    min-width: 120px;
+}
+.post_card .card_image img {
+    width: 100%;
+}
+/*Tags List Styles START
+---------------------------------------*/
+ul.post_tags { 
+    display: flex;
+    column-gap: 8px;
+	margin: 8px 0 0;
+	flex-flow:wrap;
+}
+ul.post_tags li {
+    margin: 4px 0;
+}
+ul.post_tags li a { 
+    background: #c2dfff;
+    padding: 3px 8px 5px;
+    border-radius: 3px;
+    color: var(--blue);
+    text-decoration: none;
+    display: block;
+}
+ul.post_tags li a:hover { 
+    background: var(--blue); 
+    color: #fff 
+}
+/*Post Actions bar (Like comments etc) Styles START
+-------------------------------------------------------*/
+.post_actionsBar {
+    margin-top: 12px;
+}
+.post_action_icons { 
+	column-gap:24px;
+}
+.post_action_icons .psot_action_button {
+    border: 0;
+    background: transparent;
+    font-size: 18px;
+	color: var(--grey);
+	position:relative;
+	cursor:pointer;
+}
+.post_action_icons .psot_action_button i {
+    display: inherit;
+}
+.post_action_icons .psot_action_button:hover { 
+	color: var(--dark);
+}
+.post_action_icons .psot_action_button.active { 
+	color: var(--blue);
+}
+.post_action_icons .psot_action_button .action_count {
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    right: -10px;
+    top: 1px;
+	display: none;
+}
+.post_action_icons .psot_action_button.active .action_count { 
+	display: block;
+}
+.dropdown-wrapper {
+    position: relative;
+}
+.dropdown-button {
+    color: var(--grey);
+    padding: 0 4px;
+	cursor:pointer;
+}
+.dropdown-button:hover {
+    color: var(--blue); 
+}
+.dropdown-menu {
+    display: none;
+    border: 1px solid var(--light-grey);
+    border-radius: 3px;
+    padding: 10px 15px;
+    min-width: 180px;
+    position: absolute;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 0 10px -6px #333;
+	z-index: 99;
+}
+.posts_sorting .dropdown-menu { 
+    right: auto;
+	left:0; 
+}
+.dropdown-menu.show {
+    display: block; 
+}
+.dropdown-menu ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 3px 0;
+    display: block;
+}
+/*Post Mutual Connection------------------------------------------*/
+.post_mutual_conects {
+    margin-right: 20px;
+}
+.post_mutual_conects .connects_info {
+    color: var(--grey);
+    margin-right: 20px;
+    font-size: 14px;
+}
+.post_mutual_conects ul.connects_profiles {
+    display: flex;
+    justify-content: flex-end;
+}
+.post_mutual_conects .connects_profiles li {
+    width: 34px;
+    height: 34px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark);
+    color: #fff;
+    line-height: 34px;
+    font-size: 14px;
+    text-align: center;
+    margin-left: -12px;
+}
+.post_mutual_conects .connects_profiles li img {
+    width: 100%;
+}
+@media(max-width:767px) {
+.center_container { 
+    padding: 0;
+}
+.post_card .post_titlebar { 
+	padding: 0 20px;
+	justify-content: flex-start;
+	position: relative;
+} 
+.post_card .post_title { 
+    padding-top: 14px;
+}
+.post_card .post_titlebar .post_dp {
+    margin-right: 8px;
+}
+.post_card .posted_time { 
+    font-size: 12px;
+    position: absolute;
+    left: 68px;
+    top: 2px;
+}
+.post_card {
+    column-gap: 0; 
+    flex-flow: column;
+    padding-left: 0;
+    padding-right: 0;
+} 
+.filter_card {
+    flex-flow: wrap;
+    padding: 12px 20px;
+}
+.post_card .card {
+    column-gap: 0;
+    flex-flow: wrap;
+	padding-left: 0;
+    padding-right: 0;
+}
+.post_card .card .card_content {
+    padding: 0 20px;
+}
+.post_card .card_image {
+    min-width: 100%;
+	margin-bottom: 14px;
+}
+.post_actionsBar {
+    margin-top: 12px;
+    padding: 0 20px;
+}
+.post_mutual_conects {
+    margin-right: 8px;
+}
+.post_mutual_conects .connects_info { 
+    margin-right: 14px;
+    font-size: 13px;
+}
+.post_mutual_conects .connects_profiles li {
+    width: 30px;
+    height: 30px;
+}
+.post_card .card_content .post_heading {
+    font-size: 16px; 
+} 
+.filter_card .more_menu span {
+    display:none;
+}
+}
+
+
+
+
+/*Settings Page Start
+***************************************************************************************************************/
+
+/*Form Card Style START///////////////////////////////////////////*/
+ 
+.card_title {
+    border-bottom: 2px solid var(--light-grey);
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.form-row .col {
+    width: 100%;
+}
+.form-field {
+	width: 100%;
+    margin-bottom: 25px;
+}
+.field-wrap {
+	position:relative;
+}
+.field-wrap .form-control {
+	padding-left:55px;
+}
+.field-wrap i {
+    position: absolute;
+    font-size: 28px;
+    top: 6px;
+    left: 14px;
+}
+.form-field label {
+    font-size: 14px;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+.form-control {
+    width: 100%;
+    border: 1px solid var(--light-grey);
+    border-radius: 3px;
+    padding: 4px 15px;
+    height: 40px;
+}
+.form-control.auto-filled {
+    background: var(--light);
+}
+.form-control.disabled {
+    background: #c7c9ca;
+}
+.form-control:focus { 
+    border-color: var(--blue);
+	outline:none; 
+}
+.error-message {
+    font-style: italic;
+    font-size: 13px;
+    text-align: right;
+    display: block;
+    color: var(--red);
+    padding-top: 3px;
+}
+.error-in label {
+    color: var(--red);
+}
+.error-in .form-control {
+    border-color:var(--red);
+}
+.backLink {
+    color: var(--blue);
+    text-decoration: none;
+}
+.backLink:hover {
+    color: var(--dark);
+    text-decoration: none;
+}
+.backLink svg {
+    width: 21px;
+    vertical-align: -7px;
+    margin-right: 6px;
+} 
+@media(max-width:767px) {
+.form-row { 
+    flex-flow: wrap;
+}
+}
+/*Form Card Style END///////////////////////////////////////////*/
+
+/*Invoices Card Style START///////////////////////////////////////////*/
+.invoice_card .invoice_Rows .Data_Row {
+    display: flex;
+    justify-content: space-between;
+	align-items:center;
+	    margin: 0 -25px;
+    padding: 15px 25px;
+}
+.invoice_card .invoice_Rows .Data_Row:nth-child(even) {
+    background:#f8fbff;
+}
+.invoice_card .invoice_Rows .Data_Row h4 span {
+    color: var(--grey);
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+@media(max-width:767px) {
+.invoice_card .invoice_Rows .Data_Row { 
+    flex-flow: wrap;
+}
+.invoice_card .invoice_Rows .Data_Row h4 span { 
+    margin-left: 0;
+    display: block;
+}
+}

@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+<div class="main_wrapper">
+
+<!--Header Start /////////////////////////////////////////////////////////////////////////////////-->
+	<header>
+    	<div class="container">
+    	<div class="header_inner d-flex justify-content-between align-items-center">
+        	<div class="header_left d-flex align-items-center">
+        	<div class="logo">
+            	<a href="index.html">
+                	<img class="for-desktop" src="images/logo-desktop.png" alt="Logo">
+                	<img class="for-mobile" src="images/logo-mobile.png" alt="Logo">
+                </a>
+            </div>
+            <div class="header_search">
+            	<input type="text" placeholder="Search for something...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="for-mobile menu_trigger"><i class="fas fa-bars"></i></div>
+            </div>
+            <div class="header_right d-flex justify-content-between align-items-center">
+            	<div class="header_messages for-desktop">
+                	<div class="message_Trig">
+                    <i class="fas fa-comments"></i>
+                    <small class="msg_count">2</small>
+                    </div>
+                </div>
+                <div class="user_menu for-desktop">
+                	<div class="user_menu_Trig">
+                    	<a href="settings.html"><img src="images/user-profile-image.png" alt="Profile Image"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+<!--Header END /////////////////////////////////////////////////////////////////////////////////-->
+
+<!--Centered Container Start /////////////////////////////////////////////////////////////////////////////////-->
+
+	<div class="center_container">
+    
+    <div class="BackNav mb-20">
+    	<a href="index.html" class="backLink">
+        <svg viewBox="0 0 448 512"><path fill="currentColor" d="M136.97 380.485l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L60.113 273H436c6.627 0 12-5.373 12-12v-10c0-6.627-5.373-12-12-12H60.113l83.928-83.444c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0l-116.485 116c-4.686 4.686-4.686 12.284 0 16.971l116.485 116c4.686 4.686 12.284 4.686 16.97-.001z"></path></svg>
+        Go Back
+        </a>
+    </div>
+    
+     <div class="form_card card border-radius">
+     	<h3 class="card_title">Personal Information</h3>
+        <div class="form-wrap">
+        	<div class="form-row">
+            	<div class="col">
+                	<div class="form-field">
+                    	<label>First Name</label>
+                        <input type="text" class="form-control auto-filled" value="Imran">
+                    </div>
+                </div>
+            	<div class="col">
+                	<div class="form-field">
+                    	<label>Last Name</label>
+                        <input type="text" class="form-control auto-filled" value="Bashir">
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+            	<div class="col">
+                	<div class="form-field">
+                    	<label>Email</label>
+                        <input type="text" class="form-control disabled" value="youremail@gmail.com">
+                    </div>
+                </div>
+            	<div class="col">
+                	<div class="form-field">
+                    	<label>Text Field</label>
+                        <input type="text" class="form-control" value="Text Field">
+                    </div>
+                </div>
+            </div>
+            <div>
+            	<button class="button">Edit Personal Information</button>
+            </div>
+        </div>
+     </div>
+    
+     <div class="form_card card border-radius">
+     	<h3 class="card_title">Change Password</h3>
+        <div class="form-wrap">
+        	<div class="form-row"> 
+                <div class="form-field">
+                    <label>Current Password</label>
+                    <input type="password" class="form-control auto-filled" value="asf534rfdg435">
+                </div> 
+            </div>
+            <div class="form-row">
+            	<div class="col">
+                	<div class="form-field">
+                    	<label>New Password</label>
+                        <input type="password" class="form-control" value="asf534rfdg435">
+                    </div>
+                </div>
+            	<div class="col">
+                	<div class="form-field error-in">
+                    	<label>Confirm New Password</label>
+                        <input type="password" class="form-control" value="asf534rfdg435">
+                        <span class="error-message">Error Message</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+            	<button class="button">Change Password</button>
+            </div>
+        </div>
+     </div>
+     
+     <div class="form_card card border-radius">
+     	<h3 class="card_title">Payment Method</h3>
+        <div class="form-wrap">
+        	<div class="form-row"> 
+                <div class="form-field">
+                    <label>Payment Method</label>
+                    <div class="field-wrap">
+                    <i class="fab fa-cc-visa"></i>
+                    <input type="text" class="form-control auto-filled" value="XXX-XXXX-XXXX-009">
+                    </div>
+                </div> 
+            </div>
+             
+            <div>
+            	<button class="button">Change Payment Method</button>
+            </div>
+        </div>
+     </div>
+     
+     <div class="invoice_card card border-radius">
+     	<h3 class="card_title">Invoices</h3>
+        <div class="invoice_Rows">
+        <div class="Data_Row">
+        	 <h4>$12.00 charged to Visa ending in 0099 <span>Mar 5 at 9:22 PM</span></h4> 
+             <a href="#" class="link">Download</a>
+        </div>
+        <div class="Data_Row">
+        	 <h4>$12.00 charged to Visa ending in 0099 <span>Mar 5 at 9:22 PM</span></h4> 
+             <a href="#" class="link">Download</a>
+        </div>
+        <div class="Data_Row">
+        	 <h4>$12.00 charged to Visa ending in 0099 <span>Mar 5 at 9:22 PM</span></h4> 
+             <a href="#" class="link">Download</a>
+        </div>
+     </div> 
+     </div>
+     
+     <div class="invoice_card card border-radius">
+     	<h3 class="card_title">Billing Details</h3>
+        <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</small> </p>
+        <div class="card bg-light border-radius mt-15">
+            <p><strong>Simply dummy text 34234sdf34234dhdf printing</strong></p>
+            <p><strong>PA sdf34234LH</strong></p>
+            <p><strong>PA text sdf34234dh printing</strong></p>
+        </div>
+        
+        <div class="mt-30">
+            	<button class="button">Change Payment Method</button>
+            </div>
+            
+     </div>
+     
+    </div>
+
+
+</div>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/custom-scripts.js"></script>
+</body>
+</html>

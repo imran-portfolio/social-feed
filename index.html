@@ -1,0 +1,522 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feed</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+<div class="main_wrapper">
+
+<!--Header Start /////////////////////////////////////////////////////////////////////////////////-->
+	<header>
+    	<div class="container">
+    	<div class="header_inner d-flex justify-content-between align-items-center">
+        	<div class="header_left d-flex align-items-center">
+        	<div class="logo">
+            	<a href="index.html">
+                	<img class="for-desktop" src="images/logo-desktop.png" alt="Logo">
+                	<img class="for-mobile" src="images/logo-mobile.png" alt="Logo">
+                </a>
+            </div>
+            <div class="header_search">
+            	<input type="text" placeholder="Search for something...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="for-mobile menu_trigger"><i class="fas fa-bars"></i></div>
+            </div>
+            <div class="header_right d-flex justify-content-between align-items-center">
+            	<div class="header_messages for-desktop">
+                	<div class="message_Trig">
+                    <i class="fas fa-comments"></i>
+                    <small class="msg_count">2</small>
+                    </div>
+                </div>
+                <div class="user_menu for-desktop">
+                	<div class="user_menu_Trig">
+                    	<a href="settings.html"><img src="images/user-profile-image.png" alt="Profile Image"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+<!--Header END /////////////////////////////////////////////////////////////////////////////////-->
+
+<!--Centered Container Start /////////////////////////////////////////////////////////////////////////////////-->
+
+	<div class="center_container">
+    <ul class="tabs-nav for-desktop">
+      <li class="active"><a id="FeedTab"><i class="fas fa-chart-line"></i> Feed</a></li>
+      <li><a id="ChatTab"><i class="fas fa-comments"></i> Chat</a></li> 
+      <li><a id="ContactsTab"><i class="fas fa-users"></i> Contacts</a></li> 
+      <li><a id="EventsTab"><i class="fas fa-school"></i> Events</a></li> 
+	</ul>
+    
+    <div class="tab-content" id="FeedTab_tab">
+    <!--POST Filter Card START ============================================-->
+    	<div class="post_card filter_card card d-flex justify-content-between border-radius">
+        <div class="posts_sorting">
+        	<div class="dropdown-wrapper">
+                <div class="dropdown-button">
+                	<span class="sort_select">Newst</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Hide</a></li>
+                        <li><a href="#">Delete</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="filter_options d-flex align-items-center">
+        	<div class="check_list for-desktop">
+            	<div class="custom-checkbox">
+                	<input type="checkbox" id="check1">
+                    <label for="check1">Needs</label>
+                </div>
+            	<div class="custom-checkbox">
+                	<input type="checkbox" id="check2">
+                    <label for="check2">Gifts</label>
+                </div>
+            </div>
+            <div class="more_menu">
+        	<div class="dropdown-wrapper">
+                <div class="dropdown-button">
+                	 <i class="fas fa-sliders-h"></i>
+                     <span>More</span>
+                </div>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Hide</a></li>
+                        <li><a href="#">Delete</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    	</div>
+    <!--POST Filter Card END ============================================-->
+    
+    <!--POST 1 BOX START ============================================-->
+    	<div class="post_card card d-flex justify-content-between border-radius">
+        	<div class="post_dp for-desktop"><img src="images/user-profile-image.png" alt="Profile Image"></div>
+            <div class="post_content">
+            	<div class="post_titlebar d-flex justify-content-between align-items-center">
+                <div class="post_dp for-mobile"><img src="images/user-profile-image.png" alt="Profile Image"></div>
+                	<a href="#" class="post_title">
+                    	<strong>John deo</strong> updated their <strong>needs</strong>
+                        <div class="post_emoji"><img src="images/shake-icon.png"></div>
+                    </a>
+                    <span class="posted_time">about 16h ago</span>
+                </div>
+                <div class="card bg-light d-flex justify-content-between border-radius"> 
+                <div class="card_content">
+                	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                    <ul class="post_tags">
+                    <li><a href="#">#blog</a></li>
+                    <li><a href="#">#developer</a></li>
+                    <li><a href="#">#web</a></li>
+                    <li><a href="#">#wordpress</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="post_actionsBar d-flex justify-content-between align-items-center">
+                	<div class="post_action_icons d-flex">
+                    	<button class="psot_action_button like_btn">
+                        	<i class="far fa-heart"></i>
+                            <span class="action_count">1</span>
+                        </button>
+                    	<button class="psot_action_button comment_btn active">
+                        	<i class="fas fa-comments"></i>
+                            <span class="action_count">3</span>
+                        </button>
+                    </div>
+                    <div class="connetct_and_menu d-flex align-items-center">
+                    <div class="post_action_menu">
+                    	<div class="dropdown-wrapper">
+                        	<div class="dropdown-button"><i class="fas fa-ellipsis-h"></i></div>
+                            <div class="dropdown-menu">
+                            	<ul>
+                                	<li><a href="#">Edit</a></li>
+                                	<li><a href="#">Hide</a></li>
+                                	<li><a href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--POST 1 BOX END ============================================-->
+    
+    <!--POST 2 BOX START ============================================-->
+    	<div class="post_card card d-flex justify-content-between border-radius">
+        	<div class="post_dp for-desktop"><img src="images/user-profile-image.png" alt="Profile Image"></div>
+            <div class="post_content">
+            	<div class="post_titlebar d-flex justify-content-between align-items-center">
+                    <div class="post_dp for-mobile"><img src="images/user-profile-image.png" alt="Profile Image"></div>
+                	<a href="#" class="post_title">
+                    	<strong>John deo</strong> updated their <strong>needs</strong>
+                        <div class="post_emoji"><img src="images/gift-icon.png"></div>
+                    </a>
+                    <span class="posted_time">about 16h ago</span>
+                </div>
+                <div class="card bg-light d-flex justify-content-between border-radius">
+                <div class="card_content">
+                	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                    <ul class="post_tags">
+                    <li><a href="#">#blog</a></li>
+                    <li><a href="#">#developer</a></li>
+                    <li><a href="#">#web</a></li>
+                    <li><a href="#">#wordpress</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="post_actionsBar d-flex justify-content-between align-items-center">
+                	<div class="post_action_icons d-flex">
+                    	<button class="psot_action_button like_btn active">
+                        	<i class="far fa-heart"></i>
+                            <span class="action_count">1</span>
+                        </button>
+                    	<button class="psot_action_button comment_btn">
+                        	<i class="fas fa-comments"></i>
+                            <span class="action_count">1</span>
+                        </button>
+                    </div>
+                    <div class="connetct_and_menu d-flex align-items-center">
+                    <div class="post_mutual_conects d-flex align-items-center">
+                    	<span class="connects_info">17 mutual connections</span>
+                        <ul class="connects_profiles">
+                        	<li><img src="images/user-profile-image.png"></li>
+                        	<li><img src="images/user-profile-image.png"></li>
+                        	<li><img src="images/user-profile-image.png"></li>
+                        	<li><img src="images/user-profile-image.png"></li>
+                        	<li><span>5+</span></li>
+                        </ul>
+                    </div>
+                    <div class="post_action_menu">
+                    	<div class="dropdown-wrapper">
+                        	<div class="dropdown-button"><i class="fas fa-ellipsis-h"></i></div>
+                            <div class="dropdown-menu">
+                            	<ul>
+                                	<li><a href="#">Edit</a></li>
+                                	<li><a href="#">Hide</a></li>
+                                	<li><a href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--POST 2 BOX END ============================================-->
+    
+    <!--POST 3 BOX START ============================================-->
+    	<div class="post_card card d-flex justify-content-between border-radius">
+        	<div class="post_dp for-desktop"><img src="images/user-profile-image.png" alt="Profile Image"></div>
+            <div class="post_content">
+            	<div class="post_titlebar d-flex justify-content-between align-items-center">
+                    <div class="post_dp for-mobile"><img src="images/user-profile-image.png" alt="Profile Image"></div>
+                	<a href="#" class="post_title">
+                    	<strong>John deo</strong> updated their <strong>needs</strong>
+                        <div class="post_emoji"><img src="images/event-icon.png"></div>
+                    </a>
+                    <span class="posted_time">about 2d ago</span>
+                </div>
+                <div class="card bg-light d-flex justify-content-between border-radius">
+                <div class="card_image border-radius">
+                <img class="for-desktop border-radius" src="images/post-image-desktop.png">
+                <img class="for-mobile border-radius" src="images/post-image-mobile.png">
+                </div>
+                <div class="card_content">
+                <h2 class="post_heading">Lorem Ipsum Simply Dummy Text Printing Typesetting</h2>
+                <span class="event_time">Sat, 00/000/0000 @ 00:00am CEST by <a href="#">Charvon Nikolandon</a></span>
+                	<small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</small>
+                    <ul class="post_tags">
+                    <li><a href="#">#blog</a></li>
+                    <li><a href="#">#developer</a></li>
+                    <li><a href="#">#web</a></li>
+                    <li><a href="#">#wordpress</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="post_actionsBar d-flex justify-content-between align-items-center">
+                	<div class="post_action_icons d-flex">
+                    	<button class="psot_action_button like_btn">
+                        	<i class="far fa-heart"></i>
+                            <span class="action_count">1</span>
+                        </button>
+                    	<button class="psot_action_button comment_btn">
+                        	<i class="fas fa-comments"></i>
+                            <span class="action_count">3</span>
+                        </button>
+                    </div>
+                    <div class="connetct_and_menu d-flex align-items-center">
+                    <div class="post_action_menu">
+                    	<div class="dropdown-wrapper">
+                        	<div class="dropdown-button"><i class="fas fa-ellipsis-h"></i></div>
+                            <div class="dropdown-menu">
+                            	<ul>
+                                	<li><a href="#">Edit</a></li>
+                                	<li><a href="#">Hide</a></li>
+                                	<li><a href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--POST 3 BOX END ============================================-->
+    
+    
+    </div>
+          
+          
+          
+          
+          <div class="tab-content" id="ChatTab_tab">
+          
+    <!--POST Filter Card START ============================================-->
+    	<div class="post_card filter_card card d-flex justify-content-between border-radius">
+        <div class="posts_sorting">
+        	<div class="dropdown-wrapper">
+                <div class="dropdown-button">
+                	<span class="sort_select">Newst</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Hide</a></li>
+                        <li><a href="#">Delete</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="filter_options d-flex align-items-center">
+        	<div class="check_list for-desktop">
+            	<div class="custom-checkbox">
+                	<input type="checkbox" id="check1">
+                    <label for="check1">Needs</label>
+                </div>
+            	<div class="custom-checkbox">
+                	<input type="checkbox" id="check2">
+                    <label for="check2">Gifts</label>
+                </div>
+            </div>
+            <div class="more_menu">
+        	<div class="dropdown-wrapper">
+                <div class="dropdown-button">
+                	 <i class="fas fa-sliders-h"></i>
+                     More
+                </div>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Hide</a></li>
+                        <li><a href="#">Delete</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    	</div>
+    <!--POST Filter Card END ============================================-->
+    
+    <!--POST 3 BOX START ============================================-->
+    	<div class="post_card card d-flex justify-content-between border-radius">
+        	<div class="post_dp for-desktop"><img src="images/user-profile-image.png" alt="Profile Image"></div>
+            <div class="post_content">
+            	<div class="post_titlebar d-flex justify-content-between align-items-center">
+                    <div class="post_dp for-mobile"><img src="images/user-profile-image.png" alt="Profile Image"></div>
+                	<a href="#" class="post_title">
+                    	<strong>John deo</strong> updated their <strong>needs</strong>
+                        <div class="post_emoji"><img src="images/event-icon.png"></div>
+                    </a>
+                    <span class="posted_time">about 2d ago</span>
+                </div>
+                <div class="card bg-light d-flex justify-content-between border-radius">
+                <div class="card_image border-radius">
+                <img class="for-desktop border-radius" src="images/post-image-desktop.png">
+                <img class="for-mobile border-radius" src="images/post-image-mobile.png">
+                </div>
+                <div class="card_content">
+                <h2 class="post_heading">Lorem Ipsum Simply Dummy Text Printing Typesetting</h2>
+                <span class="event_time">Sat, 00/000/0000 @ 00:00am CEST by <a href="#">Charvon Nikolandon</a></span>
+                	<small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</small>
+                    <ul class="post_tags">
+                    <li><a href="#">#blog</a></li>
+                    <li><a href="#">#developer</a></li>
+                    <li><a href="#">#web</a></li>
+                    <li><a href="#">#wordpress</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="post_actionsBar d-flex justify-content-between align-items-center">
+                	<div class="post_action_icons d-flex">
+                    	<button class="psot_action_button like_btn">
+                        	<i class="far fa-heart"></i>
+                            <span class="action_count">1</span>
+                        </button>
+                    	<button class="psot_action_button comment_btn">
+                        	<i class="fas fa-comments"></i>
+                            <span class="action_count">3</span>
+                        </button>
+                    </div>
+                    <div class="connetct_and_menu d-flex align-items-center">
+                    <div class="post_action_menu">
+                    	<div class="dropdown-wrapper">
+                        	<div class="dropdown-button"><i class="fas fa-ellipsis-h"></i></div>
+                            <div class="dropdown-menu">
+                            	<ul>
+                                	<li><a href="#">Edit</a></li>
+                                	<li><a href="#">Hide</a></li>
+                                	<li><a href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--POST 3 BOX END ============================================-->
+    
+    <!--POST 1 BOX START ============================================-->
+    	<div class="post_card card d-flex justify-content-between border-radius">
+        	<div class="post_dp for-desktop"><img src="images/user-profile-image.png" alt="Profile Image"></div>
+            <div class="post_content">
+            	<div class="post_titlebar d-flex justify-content-between align-items-center">
+                    <div class="post_dp for-mobile"><img src="images/user-profile-image.png" alt="Profile Image"></div>
+                	<a href="#" class="post_title">
+                    	<strong>John deo</strong> updated their <strong>needs</strong>
+                        <div class="post_emoji"><img src="images/shake-icon.png"></div>
+                    </a>
+                    <span class="posted_time">about 16h ago</span>
+                </div>
+                <div class="card bg-light d-flex justify-content-between border-radius"> 
+                <div class="card_content">
+                	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                    <ul class="post_tags">
+                    <li><a href="#">#blog</a></li>
+                    <li><a href="#">#developer</a></li>
+                    <li><a href="#">#web</a></li>
+                    <li><a href="#">#wordpress</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="post_actionsBar d-flex justify-content-between align-items-center">
+                	<div class="post_action_icons d-flex">
+                    	<button class="psot_action_button like_btn">
+                        	<i class="far fa-heart"></i>
+                            <span class="action_count">1</span>
+                        </button>
+                    	<button class="psot_action_button comment_btn active">
+                        	<i class="fas fa-comments"></i>
+                            <span class="action_count">3</span>
+                        </button>
+                    </div>
+                    <div class="connetct_and_menu d-flex align-items-center">
+                    <div class="post_action_menu">
+                    	<div class="dropdown-wrapper">
+                        	<div class="dropdown-button"><i class="fas fa-ellipsis-h"></i></div>
+                            <div class="dropdown-menu">
+                            	<ul>
+                                	<li><a href="#">Edit</a></li>
+                                	<li><a href="#">Hide</a></li>
+                                	<li><a href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--POST 1 BOX END ============================================-->
+    
+    <!--POST 2 BOX START ============================================-->
+    	<div class="post_card card d-flex justify-content-between border-radius">
+        	<div class="post_dp for-desktop"><img src="images/user-profile-image.png" alt="Profile Image"></div>
+            <div class="post_content">
+            	<div class="post_titlebar d-flex justify-content-between align-items-center">
+                    <div class="post_dp for-mobile"><img src="images/user-profile-image.png" alt="Profile Image"></div>
+                	<a href="#" class="post_title">
+                    	<strong>John deo</strong> updated their <strong>needs</strong>
+                        <div class="post_emoji"><img src="images/gift-icon.png"></div>
+                    </a>
+                    <span class="posted_time">about 16h ago</span>
+                </div>
+                <div class="card bg-light d-flex justify-content-between border-radius">
+                <div class="card_content">
+                	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                    <ul class="post_tags">
+                    <li><a href="#">#blog</a></li>
+                    <li><a href="#">#developer</a></li>
+                    <li><a href="#">#web</a></li>
+                    <li><a href="#">#wordpress</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="post_actionsBar d-flex justify-content-between align-items-center">
+                	<div class="post_action_icons d-flex">
+                    	<button class="psot_action_button like_btn active">
+                        	<i class="far fa-heart"></i>
+                            <span class="action_count">1</span>
+                        </button>
+                    	<button class="psot_action_button comment_btn">
+                        	<i class="fas fa-comments"></i>
+                            <span class="action_count">1</span>
+                        </button>
+                    </div>
+                    <div class="connetct_and_menu d-flex align-items-center">
+                    <div class="post_mutual_conects d-flex align-items-center">
+                    	<span class="connects_info">17 mutual connections</span>
+                        <ul class="connects_profiles">
+                        	<li><img src="images/user-profile-image.png"></li>
+                        	<li><img src="images/user-profile-image.png"></li>
+                        	<li><img src="images/user-profile-image.png"></li>
+                        	<li><img src="images/user-profile-image.png"></li>
+                        	<li><span>5+</span></li>
+                        </ul>
+                    </div>
+                    <div class="post_action_menu">
+                    	<div class="dropdown-wrapper">
+                        	<div class="dropdown-button"><i class="fas fa-ellipsis-h"></i></div>
+                            <div class="dropdown-menu">
+                            	<ul>
+                                	<li><a href="#">Edit</a></li>
+                                	<li><a href="#">Hide</a></li>
+                                	<li><a href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--POST 2 BOX END ============================================-->
+          </div> 
+         
+    </div>
+
+
+</div>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/custom-scripts.js"></script>
+</body>
+</html>
